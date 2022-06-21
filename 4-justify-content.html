@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - justify-content</title>
+
+    <style>
+        .container{ /*ABRA O SHOW LIVE SERVE PELO CTRL+SFIT+P para ver o comportamento de cada flexBox*/
+            max-width: 400px;
+            border: 1px solid black;
+            margin: 0;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .flex-start{
+            justify-content: flex-start;
+        }
+
+        .flex-end{
+            justify-content: flex-end;
+        }
+
+        .flex-center{
+            justify-content: center;
+        }
+
+        .space-between{
+            justify-content: space-between;
+        }
+
+        .space-around{
+            justify-content: space-around; /*USAR ESSE FLEX NO RODAPÉ DO MEU SITE*/
+        }
+
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>flex-start</p>
+    <section class="container flex-start">
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end">
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+    </section>
+
+    <p>flex-center</p>
+    <section class="container flex-center">
+        <DIV class="item">endç</DIV>
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+        <DIV class="item">insta</DIV>
+    </section>
+
+    <p>space-between</p>
+    <section class="container space-between">
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+        <DIV class="item">insta</DIV>
+    </section>
+
+    <p>space-around</p>
+    <section class="container space-around">
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+        <DIV class="item">insta</DIV>
+    </section>
+
+    <h1>column</h1>
+    
+    <p>flex-start (column)</p>
+    <section class="container flex-start column">
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+        <DIV class="item">insta</DIV>
+    </section>
+
+    <p>flex-end (column)</p>
+    <section class="container flex-end column">
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+        <DIV class="item">insta</DIV>
+    </section>
+
+    <p>center (column)</p>
+    <section class="container flex-center column">
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+        <DIV class="item">insta</DIV>
+    </section>
+
+    <p>space-between (column)</p>
+    <section class="container space-between column">
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+        <DIV class="item">insta</DIV>
+    </section>
+
+    <p>space-around (column)</p>
+    <section class="container space-around column">
+        <DIV class="item">git</DIV>
+        <DIV class="item">mail</DIV>
+        <DIV class="item">linkedin</DIV>
+        <DIV class="item">insta</DIV>
+    </section>
+</body>
+</html>
